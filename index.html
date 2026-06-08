@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guatemala 40 · 14–21 Noviembre</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f5f3ef;color:#1a1a1a;max-width:780px;margin:0 auto;padding:0 0 40px}
+a{color:#2563a8;text-decoration:none}a:hover{text-decoration:underline}
+h1{font-family:Georgia,serif;font-size:2rem;font-weight:900;line-height:1.1}
+h2{font-family:Georgia,serif;font-size:1.3rem;font-weight:700;margin-bottom:6px}
+h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
+.hero{background:#1a1a1a;color:#fff;padding:28px 24px 22px}
+.hero small{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#d4952a;display:block;margin-bottom:6px}
+.hero p{margin-top:8px;font-size:.85rem;color:rgba(255,255,255,.6)}
+.hero span{color:#e8693e}
+.tabs{display:flex;background:#fff;border-bottom:1px solid #ddd;overflow-x:auto;position:sticky;top:0;z-index:9}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;padding:10px 14px;font-size:.75rem;font-weight:500;cursor:pointer;color:#888;border:none;border-bottom:2px solid transparent;background:none;font-family:inherit}
+.tab:hover{color:#1a1a1a}.tab.on{color:#1a1a1a;border-bottom-color:#c84b2f}
+.panel{display:none;padding:16px}.panel.on{display:block}
+.day{background:#fff;border-radius:10px;padding:16px;margin-bottom:12px;border:1px solid #e5e5e5}
+.day-label{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:#888;margin-bottom:4px}
+.tag{display:inline-block;font-size:.65rem;font-weight:600;padding:2px 7px;border-radius:20px;margin-left:6px;vertical-align:middle}
+.tag.r{background:#fde8e4;color:#891500}.tag.g{background:#e0f2ec;color:#0b4d2a}.tag.b{background:#e8f0fb;color:#103d7a}.tag.y{background:#fef3dc;color:#8a5a00}
+.note{border-radius:8px;padding:14px;margin-bottom:12px;font-size:.85rem;line-height:1.6}
+.note.lava{background:#fef0ec;border-left:3px solid #c84b2f}.note.jade{background:#edf7f2;border-left:3px solid #1a7a5a}
+.note.gold{background:#fef8ed;border-left:3px solid #d4952a}.note.lake{background:#edf3fb;border-left:3px solid #2563a8}
+.note strong{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.note.lava strong{color:#c84b2f}.note.jade strong{color:#1a7a5a}.note.gold strong{color:#d4952a}.note.lake strong{color:#2563a8}
+ul{padding-left:16px}li{margin-bottom:4px;font-size:.875rem;line-height:1.6}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.box{background:#fff;border-radius:8px;padding:14px;border:1px solid #e5e5e5;font-size:.825rem;line-height:1.5}
+.box strong{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:1px;color:#888;margin-bottom:5px}
+.price-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid #f0f0f0}
+.chip{font-size:.7rem;color:#555;background:#f5f3ef;padding:3px 9px;border-radius:20px}
+.chip b{color:#1a1a1a}
+table{width:100%;border-collapse:collapse;font-size:.85rem}
+td{padding:8px 0;border-bottom:1px solid #f0f0f0}
+td:last-child{text-align:right;font-weight:500}
+.total td{font-weight:700;font-size:1rem;border:none;padding-top:12px}
+.total td:last-child{color:#c84b2f}
+.urls a{display:block;padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:.825rem}
+section-head{display:block;background:#fff;border-radius:10px;padding:14px 16px;margin-bottom:12px;border:1px solid #e5e5e5}
+@media(max-width:600px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <small>Guatemala · 14–21 Noviembre</small>
+  <h1>40 años sobre<br><span>un volcán activo</span></h1>
+  <p>4 personas · 7 días · 2 volcanes · 1 lago · experiencias que no se olvidan</p>
+</div>
+
+<div class="tabs">
+  <button class="tab on" onclick="show('dias',this)">Itinerario</button>
+  <button class="tab" onclick="show('volcanes',this)">Volcanes</button>
+  <button class="tab" onclick="show('comida',this)">Gastronomía</button>
+  <button class="tab" onclick="show('ropa',this)">Qué llevar</button>
+  <button class="tab" onclick="show('datos',this)">Datos</button>
+  <button class="tab" onclick="show('presupuesto',this)">Presupuesto</button>
+  <button class="tab" onclick="show('urls',this)">Links</button>
+</div>
+
+<!-- ITINERARIO -->
+<div id="dias" class="panel on">
+
+<div class="day">
+  <div class="day-label">Sábado 14 · Llegada</div>
+  <h2>Ciudad de Guatemala</h2>
+  <div class="note gold"><strong>Llegada</strong>Recoger la renta de SUV en aeropuerto La Aurora (GUA). Opción A: quedarse en Zona Viva (Zona 10) y cenar en <b>Tamarindos</b>. Opción B: ir directo a Antigua (45 min).</div>
+</div>
+
+<div class="day">
+  <div class="day-label">Domingo 15 · Día completo</div>
+  <h2>Antigua Guatemala</h2>
+  <div class="note jade"><strong>Contexto</strong>Capital colonial destruida dos veces por terremotos (1717 y 1773). Patrimonio UNESCO. Tres volcanes visibles desde cualquier punto: Agua, Fuego y Acatenango.</div>
+  <ul>
+    <li><b>Arco de Santa Catalina</b> — la foto icónica. Ir temprano antes de los grupos.</li>
+    <li><b>Cerro de la Cruz</b> — mirador con vista panorámica a la ciudad y el Volcán de Agua. 20 min caminando.</li>
+    <li><b>Ruinas La Merced + Catedral</b> — fachada barroca más elaborada de Centroamérica. Catedral caminable desde adentro (~Q10).</li>
+    <li><b>Mercado Compacalá</b> — jade guatemalteco, huipiles bordados a mano, café de especialidad. Solo efectivo.</li>
+    <li><b>Café No Sé / Fernando's Kaffee</b> — café volcánico de altura. Guatemala = top 5 mundial. Pedir pour over de Huehuetenango.</li>
+    <li><b>Cena</b>: El Refectorio by Casa Santo Domingo (convento colonial siglo XVII) o Barriga Llena (6ta Av Norte, cocina del día).</li>
+  </ul>
+</div>
+
+<div class="day">
+  <div class="day-label">Lunes 16 · Dos volcanes en un día</div>
+  <h2>Pacaya (mañana) → Base Acatenango (noche)</h2>
+  <div class="note lava"><strong>Estrategia</strong>Tour Pacaya salida 6am (regresa al mediodía). Almuerzo en Antigua. 2-3pm: traslado a La Soledad, inicio Acatenango. Campamento base al anochecer. Cenar con el Fuego erupcionando enfrente.</div>
+  <ul>
+    <li><b>Volcán Pacaya</b> <span class="tag g">moderado</span> — 2,552 msnm. Lava caminable, malvaviscos sobre roca incandescente. Activo 57 años.</li>
+    <li>Operador: Tropicana ($20/persona) o Trek Guatemala ($35 con almuerzo). Salida 6am desde Antigua.</li>
+    <li><b>Campamento Acatenango</b> — 3,000 msnm. Cabaña, saco de dormir -6°C, cena. Vista directa al Fuego de noche.</li>
+  </ul>
+  <div class="price-row">
+    <div class="chip">Pacaya: <b>$20–35</b>/persona</div>
+    <div class="chip">Acatenango overnight: <b>$60–90</b>/persona</div>
+  </div>
+</div>
+
+<div class="day">
+  <div class="day-label">Martes 17 · EL DÍA — Cumpleaños 40</div>
+  <h2>Cima Acatenango 3,976 msnm</h2>
+  <div class="note lava"><strong>El momento</strong>3am: salida a la cima en oscuridad total. 5:30-6am: amanecer sobre el mar de nubes con el Fuego erupcionando a 3km. 0-5°C en cima. Temperatura mágica, cielo sin contaminación lumínica.</div>
+  <ul>
+    <li>Vista 360°: Ciudad de Guatemala, Lago Atitlán, el Pacífico (días despejados)</li>
+    <li>Erupciones del Fuego cada 15-20 min. Columna de ceniza + lava visible.</li>
+    <li>Regreso al campamento 8-9am. Desayuno. Descenso completo al mediodía.</li>
+    <li>Tarde: traslado a Panajachel (70 km / 1.5 hrs). Primera noche en Atitlán.</li>
+  </ul>
+</div>
+
+<div class="day">
+  <div class="day-label">Miércoles 18 · Descanso activo</div>
+  <h2>Lago Atitlán · Nadar, flotar, recuperarse</h2>
+  <div class="note lake"><strong>Propósito del día</strong>Después de dos volcanes el cuerpo necesita agua y sol. Atitlán tiene el agua perfecta en noviembre (20-22°C). El Xocomil (viento del lago) sopla cada tarde — actividades acuáticas de mañana.</div>
+  <ul>
+    <li><b>Kayak al amanecer</b> — lago en calma total antes de las 10am. Q50-80/hora en muelle de Panajachel.</li>
+    <li><b>Playa pública Panajachel</b> — gratuita. O day pass en Hotel Jardines del Lago (~Q100) con piscina, muelle y hamacas.</li>
+    <li><b>Aguas termales Santa Catarina Palopó</b> — nacimiento termal natural a orillas del lago. 32-38°C. Acceso gratuito. Pedir lancha desde Panajachel.</li>
+    <li><b>Columpio sobre el lago</b> — en Hotel Jardines del Lago. La foto del viaje.</li>
+    <li><b>Atardecer en el muelle</b> — noviembre = mejor mes para atardeceres en Guatemala. Los tres volcanes se siluetean en naranja.</li>
+    <li><b>Cena</b>: Restaurante Atitlán (Rancho Grande) — probar el pay de elote.</li>
+  </ul>
+</div>
+
+<div class="day">
+  <div class="day-label">Jueves 19 · Cultura maya</div>
+  <h2>Pueblos del lago en lancha</h2>
+  <ul>
+    <li><b>San Juan La Laguna</b> — cooperativas de tejedoras mayas (visita real a talleres), café de especialidad, Mirador Kaqasiiwaan (Q30, vistas 360°).</li>
+    <li><b>San Pedro La Laguna</b> — street art, restaurantes con vista al lago, ambiente joven. Posibilidad de subir Volcán San Pedro (3,020 msnm, 3 hrs).</li>
+    <li><b>Santiago Atitlán</b> — hogar del Maximón: deidad sincrética maya-católica única en el mundo. Le ofrendan tabaco, ron y dinero. Experiencia antropológica real.</li>
+    <li><b>San Marcos La Laguna</b> — el más tranquilo y espiritual. Para quien quiera desconectarse.</li>
+  </ul>
+  <div class="price-row"><div class="chip">Lanchas colectivas: <b>Q25–50</b> por trayecto</div></div>
+</div>
+
+<div class="day">
+  <div class="day-label">Viernes 20 · Mercado histórico</div>
+  <h2>Chichicastenango (opcional) + regreso</h2>
+  <div class="note gold"><strong>Alerta de fechas</strong>El mercado de Chichicastenango opera jueves y domingos. El 20 nov es viernes — mercado cerrado. Alternativas: pasar el jueves 19 temprano (antes del circuito de lanchas), o visitar el mercado de Sololá (todos los días, más auténtico, menos turístico).</div>
+  <ul>
+    <li>Si no van a Chichicastenango: día libre en Atitlán o regreso tranquilo a Antigua/Ciudad Guatemala.</li>
+    <li>Cena de cierre en Antigua: Mesón Panza Verde (piano bar, cocina refinada) o Antigua Brewing Company.</li>
+    <li>Regreso a Ciudad Guatemala: 2.5 hrs desde Panajachel.</li>
+  </ul>
+</div>
+
+<div class="day">
+  <div class="day-label">Sábado 21 · Regreso</div>
+  <h2>Vuelo de regreso</h2>
+  <p style="font-size:.875rem;line-height:1.6">Devolver SUV en aeropuerto La Aurora con 2 hrs de anticipación. El aeropuerto es pequeño y eficiente. Cambiar quetzales sobrantes antes de salir — no se consiguen fuera de Guatemala.</p>
+</div>
+
+</div>
+
+<!-- VOLCANES -->
+<div id="volcanes" class="panel">
+
+<div class="note lava"><strong>Regla de oro</strong>Pacaya = accesible para todos, lava literal, 4-6 hrs. Acatenango = exigente, épico, overnight obligatorio para aprovechar el amanecer y las erupciones nocturnas del Fuego.</div>
+
+<div class="day">
+  <h2>Volcán Pacaya <span class="tag g">moderado</span></h2>
+  <p style="font-size:.875rem;margin-bottom:10px">2,552 msnm · Activo 57 años consecutivos · Lava caminable</p>
+  <ul>
+    <li>Subida: 1.5 hrs. Accesible para todos sin preparación especial.</li>
+    <li>Caminar sobre campos de lava, sentir calor geotérmico bajo los pies, asar malvaviscos sobre roca incandescente.</li>
+    <li>Caballos disponibles para quien los necesite (~Q100 extra).</li>
+    <li>Tour de tarde (salida 2pm) = ver lava brillar en la oscuridad. Más impactante.</li>
+    <li>Calcetines altos obligatorios — la lava suelta entra en los zapatos.</li>
+  </ul>
+  <div class="price-row">
+    <div class="chip">Tropicana: <b>$20</b>/persona</div>
+    <div class="chip">Trek Guatemala: <b>$35</b>/persona (con almuerzo)</div>
+    <div class="chip">Por libre: entrada <b>$12.50</b> + guía <b>$25</b></div>
+  </div>
+</div>
+
+<div class="day">
+  <h2>Volcán Acatenango <span class="tag r">difícil</span></h2>
+  <p style="font-size:.875rem;margin-bottom:10px">3,976 msnm · Tercer volcán más alto de Centroamérica · Overnight obligatorio</p>
+  <ul>
+    <li>Ganancia de elevación ~1,500m. El último tercio con capa de ceniza suelta — se siente en las piernas.</li>
+    <li>El Fuego erupciona cada 15-20 min. De noche: columna de ceniza + lava visible a 3 km. Sonido sísmico incluido.</li>
+    <li>Temperatura cima en noviembre: 0–5°C. El operador provee saco de dormir hasta -6°C.</li>
+    <li>Vista 360° desde la cima: Ciudad Guatemala, Lago Atitlán, Océano Pacífico (días despejados).</li>
+    <li>Porteadores disponibles para cargar mochilas (~$15). Sin vergüenza.</li>
+  </ul>
+  <div class="price-row">
+    <div class="chip">Overnight completo: <b>$60–90</b>/persona</div>
+    <div class="chip">Incluye: cabaña, comidas, guía, transporte</div>
+  </div>
+</div>
+
+<div class="day">
+  <h2>Operadores verificados</h2>
+  <ul>
+    <li><b>OX Expeditions</b> — oxexpeditions.com — operando desde 2004. Referencia histórica. Cabañas, guías profesionales.</li>
+    <li><b>Lava Trails</b> — lava-trails.com — cabañas privadas, grupos pequeños, vista frontal al Fuego.</li>
+    <li><b>V-Hiking Tours</b> — v-hiking.tours — empresa familiar. Desayuno en casa del guía. El más humano.</li>
+    <li><b>Trek Guatemala</b> — trekguatemala.com — eco-consciente, guías locales certificados, combos con Pacaya.</li>
+    <li><b>Tropicana</b> — tropicanahostel.com — mejor precio para Pacaya. $20/persona.</li>
+  </ul>
+  <div class="note lava" style="margin-top:12px"><strong>Reservar ya</strong>Noviembre es temporada alta. El Acatenango overnight se llena 3-4 semanas antes. Reservar en cuanto tengan vuelos confirmados.</div>
+</div>
+
+</div>
+
+<!-- GASTRONOMIA -->
+<div id="comida" class="panel">
+
+<div class="day">
+  <h2>Platos que no se pueden saltar</h2>
+  <ul>
+    <li><b>Pepián</b> <span class="tag y">plato nacional</span> — salsa espesa de pepitas de calabaza, chile, tomate, achiote. Con pollo o res. El mole guatemalteco. Pre-hispánico. Referencia: La Cuevita de los Urquizú, Antigua.</li>
+    <li><b>Kak'ik</b> — caldo de pavo con chile cobanero. Color rojo profundo, sabor único. Patrimonio UNESCO.</li>
+    <li><b>Tamales colorados</b> — en hoja de plátano (no maíz). Más suaves y húmedos que el tamal mexicano.</li>
+    <li><b>Tostadas guatemaltecas</b> — tortilla frita con guacamol y pepián frío. Desayuno en mercado: Q8-12.</li>
+    <li><b>Chuchitos</b> — tamal pequeño en hoja de maíz. El snack callejero definitivo.</li>
+    <li><b>Café de especialidad</b> — Guatemala top 5 mundial. Antigua = volcánico, chocolatoso. Huehuetenango = el de mayor altitud del mundo, floral. Llevar 1 kg a casa: Q80-120/libra en mercado.</li>
+    <li><b>Malvaviscos sobre lava del Pacaya</b> — no es gastronomía, es cultura.</li>
+  </ul>
+</div>
+
+<div class="day">
+  <h2>Restaurantes · Antigua Guatemala</h2>
+  <ul>
+    <li><b>La Cuevita de los Urquizú</b> <span class="tag y">imperdible local</span> — comida guatemalteca auténtica. Eligen los guisos del día al entrar. Café ilimitado. Patio sereno. Precio de mercado local.</li>
+    <li><b>El Refectorio by Casa Santo Domingo</b> — mejor restaurante de Antigua. Dentro de convento colonial siglo XVII. Para la cena especial de cumpleaños.</li>
+    <li><b>Barriga Llena</b> (6ta Av Norte) — cocina del día con ingredientes de mercado. Vibra moderna, sin pretensiones.</li>
+    <li><b>Antigua Brewing Company</b> — cerveza artesanal, ambiente nocturno, favorito de locales y turistas desde 2015.</li>
+    <li><b>Mesón Panza Verde</b> — cocina refinada, piano bar, galería de arte. Para noche especial.</li>
+  </ul>
+</div>
+
+<div class="day">
+  <h2>Restaurantes · Lago Atitlán</h2>
+  <ul>
+    <li><b>Restaurante Atitlán</b> (Rancho Grande, Panajachel) — pay de elote legendario. Vista al lago.</li>
+    <li><b>Circus Bar</b> (Panajachel) — cócteles, ambiente relajado para el grupo.</li>
+    <li><b>El Patio</b> (Panajachel) — pepián legítimo, precios razonables.</li>
+    <li>San Pedro La Laguna: cualquier restaurante con vista al lago. Son todos buenos.</li>
+  </ul>
+</div>
+
+</div>
+
+<!-- QUÉ LLEVAR -->
+<div id="ropa" class="panel">
+<div class="grid2">
+  <div class="box"><strong>Volcán Acatenango (0-5°C)</strong>Chamarra de invierno real, base térmica, calcetines dobles, guantes ligeros, gorro, linterna frontal + pilas extra, botas trekking o tenis trail</div>
+  <div class="box"><strong>Volcán Pacaya</strong>Calzado cerrado resistente, calcetines altos (lava suelta), pants o jeans, chaqueta ligera, bastón madera (comprar allá Q15)</div>
+  <div class="box"><strong>Antigua / ciudades</strong>Ropa casual cómoda. Noches: 15-18°C, llevar layer ligero. Tenis urbanos. Noviembre es seco.</div>
+  <div class="box"><strong>Lago Atitlán</strong>Traje de baño, sandalias de agua, bloqueador solar fuerte (altitud 1,560 msnm = más radiación), gafas polarizadas</div>
+  <div class="box"><strong>Salud</strong>Ibuprofeno (dolor muscular post-volcán), pastillas para mal de altura, botiquín básico. Seguro de viaje con evacuación médica.</div>
+  <div class="box"><strong>Dinero y docs</strong>Licencias de conducir originales para renta. Efectivo en quetzales para Atitlán y mercados. Copia digital de pasaportes.</div>
+  <div class="box"><strong>Electrónica</strong>Banco de energía portátil (volcán sin corriente), cámara con buena cámara nocturna para erupciones. Guatemala usa 120V enchufe tipo USA.</div>
+  <div class="box"><strong>Extras útiles</strong>Binoculares compactos (ver el Fuego desde campamento), bolsas Ziploc para proteger teléfono y docs de la ceniza volcánica</div>
+</div>
+</div>
+
+<!-- DATOS CURIOSOS -->
+<div id="datos" class="panel">
+<div class="day">
+  <ul>
+    <li>Guatemala tiene <b>37 volcanes</b>, 3 activos simultáneamente (Fuego, Santiaguito, Pacaya). Uno de los países más volcánicamente activos del planeta.</li>
+    <li>El <b>Lago Atitlán</b> (340 m profundidad, el más profundo de Centroamérica) se formó hace 85,000 años por la erupción <b>Chocoyos</b> — tan masiva que hundió el terreno.</li>
+    <li>El <b>quetzal</b> (ave) tiene plumas de cola hasta 1 metro. Los mayas lo consideraban sagrado — matarlo era pena de muerte. Hoy en peligro de extinción.</li>
+    <li>El <b>Maximón</b> de Santiago Atitlán fuma tabaco, bebe ron y usa sombrero y corbata. Le rezan mayas y católicos por igual. El Vaticano no lo ha aceptado.</li>
+    <li>El <b>Cerro de Oro</b> (volcán a orillas de Atitlán) inspiró al autor de <em>El Principito</em>, Antoine de Saint-Exupéry, durante sus vuelos de correo postal.</li>
+    <li>El <b>Xocomil</b> — el viento de Atitlán que sopla cada tarde — significa en tz'utujil (idioma maya): "el viento que arrastra el pecado". Por eso kayak solo de mañana.</li>
+    <li>El <b>Volcán Fuego</b> lleva en erupción continua desde 2002. En 2018 la erupción La Mesita mató a 200+ personas. El campamento del Acatenango fue reubicado por seguridad.</li>
+    <li>El <b>jade guatemalteco</b> es prehistórico. Los mayas lo valoraban más que el oro. El único yacimiento de jade azul del mundo está en Guatemala.</li>
+    <li><b>Noviembre</b> = primer mes de temporada seca. Volcanes nítidos, cielo despejado, mejores atardeceres del año en el lago.</li>
+  </ul>
+</div>
+</div>
+
+<!-- PRESUPUESTO -->
+<div id="presupuesto" class="panel">
+<div class="note gold"><strong>Supuesto</strong>Precios USD junio 2026. Quetzal (GTQ) cotiza ~7.7 por USD. Reservar SUV 60+ días antes baja el precio ~15%.</div>
+<div class="day">
+  <table>
+    <tr><td>SUV renta 7 días (~$55/día)</td><td>$385 total</td><td>$96/persona</td></tr>
+    <tr><td>Seguro auto (~$18/día)</td><td>$126</td><td>$32</td></tr>
+    <tr><td>Tour Pacaya (premium)</td><td>$140</td><td>$35</td></tr>
+    <tr><td>Tour Acatenango overnight</td><td>$300</td><td>$75</td></tr>
+    <tr><td>Hospedaje 5 noches (~$40/noche doble)</td><td>$400</td><td>$100</td></tr>
+    <tr><td>Comida 7 días (~$25/día/persona)</td><td>$700</td><td>$175</td></tr>
+    <tr><td>Lanchas Atitlán + entradas</td><td>$80</td><td>$20</td></tr>
+    <tr><td>Compras, souvenirs, café</td><td>$200</td><td>$50</td></tr>
+    <tr class="total"><td>TOTAL estimado</td><td>$2,331</td><td>$583</td></tr>
+  </table>
+</div>
+<div class="day">
+  <h3>Cómo reducir el costo</h3>
+  <ul>
+    <li>Reservar SUV en Kayak con 60+ días de anticipación — ahorra ~15%.</li>
+    <li>Tour Pacaya básico (Tropicana $20) vs premium ($35) — misma experiencia volcánica, diferente almuerzo.</li>
+    <li>Atitlán: hostal en San Pedro desde $15/noche vs hotel boutique $200. El lago es el mismo.</li>
+    <li>Comedores locales en Antigua: Q50-80 (~$7-10) todo incluido. Restaurantes turísticos: el doble.</li>
+    <li>Chichicastenango: solo efectivo. Llevar Q500-1000 por persona para compras.</li>
+  </ul>
+</div>
+</div>
+
+<!-- LINKS -->
+<div id="urls" class="panel">
+<div class="day urls">
+  <h3 style="margin-bottom:12px">Volcanes · Operadores</h3>
+  <a href="https://oxexpeditions.com/tours/acatenango-overnight-hike/" target="_blank">OX Expeditions — Acatenango Overnight</a>
+  <a href="https://lava-trails.com" target="_blank">Lava Trails — Acatenango tours</a>
+  <a href="https://v-hiking.tours/en/" target="_blank">V-Hiking Tours — familiar, desayuno en casa del guía</a>
+  <a href="https://trekguatemala.com/es/tours/excursion-de-un-dia-al-volcan-de-pacaya/" target="_blank">Trek Guatemala — Tour Pacaya (con almuerzo)</a>
+  <a href="https://tropicanahostel.com/es/producto/tour-volcan-de-pacaya/" target="_blank">Tropicana Hostel — Tour Pacaya $20</a>
+  <a href="https://blueskyadventures-gt.com/package/" target="_blank">Blue Sky Adventures — Acatenango 2 días</a>
+</div>
+<div class="day urls" style="margin-top:10px">
+  <h3 style="margin-bottom:12px">Renta de autos</h3>
+  <a href="https://www.es.kayak.com/Renta-economica-de-autos-Ciudad-de-Guatemala.43889.cars.ksp" target="_blank">Kayak — Renta Ciudad de Guatemala</a>
+  <a href="https://www.es.kayak.com/Renta-economica-de-autos-Antigua-Guatemala.40728.cars.ksp" target="_blank">Kayak — Renta Antigua Guatemala</a>
+</div>
+<div class="day urls" style="margin-top:10px">
+  <h3 style="margin-bottom:12px">Seguridad y condiciones volcánicas</h3>
+  <a href="https://insivumeh.gob.gt" target="_blank">INSIVUMEH — Instituto Nacional de Vulcanología (verificar actividad antes del viaje)</a>
+  <a href="https://conred.gob.gt" target="_blank">CONRED — Coordinadora Nacional para Reducción de Desastres</a>
+</div>
+<div class="day urls" style="margin-top:10px">
+  <h3 style="margin-bottom:12px">Lago Atitlán · Info</h3>
+  <a href="https://www.exploracentroamerica.com/lago-de-atitlan/" target="_blank">Guía completa pueblos del lago Atitlán</a>
+  <a href="https://www.guateadventure.com/es/cosas-que-hacer-en-atitlan/" target="_blank">35 actividades en Lago Atitlán — GuateAdventure</a>
+  <a href="https://eaglesnestatitlan.com/es/2023/08/12/natural-hot-springs-in-guatemala/" target="_blank">Aguas termales naturales Guatemala</a>
+</div>
+<div class="day urls" style="margin-top:10px">
+  <h3 style="margin-bottom:12px">Gastronomía · Antigua</h3>
+  <a href="https://wanderlog.com/place/details/1173781" target="_blank">La Cuevita de los Urquizú — info y reseñas</a>
+  <a href="https://www.organizotuviaje.com/donde-comer-en-antigua-guatemala/" target="_blank">Guía de restaurantes auténticos Antigua</a>
+</div>
+</div>
+
+<script>
+function show(id,el){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  el.classList.add('on');
+}
+</script>
+</body>
+</html>
